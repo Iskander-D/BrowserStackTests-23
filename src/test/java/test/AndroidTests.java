@@ -49,6 +49,7 @@ public class AndroidTests extends TestBase {
     }
     @Test
     @Tag("android")
+    @DisplayName("Проверка наличия заголовка")
     void checkNewsHeaderTest() {
         step("Проверка наличия заголовка 'In the news' ", () -> {
             $(id("org.wikipedia.alpha:id/view_card_header_title")).shouldHave(text("In the news"));
